@@ -8,4 +8,6 @@ Install Package using
     # install.packages("devtools")
     devtools::install_github("nate-d-olson/sapkotaUtils")
 
-Rmarkdown Template files \* `lab_notebook` - template lab notebook file
+Rmarkdown Template files
+
+-   `lab_notebook` - template lab notebook file
