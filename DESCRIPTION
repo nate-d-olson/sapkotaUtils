@@ -12,4 +12,5 @@ Imports: dplyr,
     devtools,
     readr,
     knitr,
-    stringr
+    stringr,
+    rmarkdown
