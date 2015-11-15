@@ -1,0 +1,72 @@
+---
+title: "Sapkota Lab Notebook Template"
+author: "Author’s Name"
+date: "November 15, 2015"
+output: html_document
+---
+<!-- Fill in title, author, and date above -->
+
+<!-- Resources for creating Rmarkdown documents
+    https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+    https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
+-->
+
+### Purpose
+<!-- Reason for performing the analysis -->
+
+### Apparatus
+#### Computing Environment 
+<!-- System used to run analysis -->
+_Replace with system used to run analysis_
+
+#### Software Versions
+```{r warning=FALSE, message=FALSE}
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(magrittr)
+library(knitr)
+library(devtools)
+```
+
+
+#### Source Data
+Names of source data files and md5 sums for provenance checking
+
+<!-- Name of input data files 
+     Make sure to use full file path names for md5 sums
+-->
+```{r}
+source_dat_files <- c("skeleton.Rmd")
+dat_info <- dplyr::data_frame()
+for(dat_file in source_dat_files){
+    md5val <- tools::md5sum(dat_file)
+    dat_info <- data_frame(file_name = dat_file, md5 = md5val) %>% 
+        bind_rows(dat_info,.)
+}
+dat_info %>% kable()
+```
+
+
+### Methods and Results
+<!-- Overview of steps used in analysis.  
+* Analysis pipeline and results.
+* For each step in the analysis
+    * summary of software used
+    * objective
+    * observations
+    * notes
+-->
+
+
+
+### Notes
+* Overall observations and conclusions from the analysis
+* Next steps
+
+### Session information
+```{r}
+devtools::session_info()
+```
+
