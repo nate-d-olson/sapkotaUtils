@@ -3,10 +3,12 @@ Title: Utilities for metagenomic data analysis
 Version: 0.0.0.9000
 Authors@R: person("Nathan", "Olson", email = "nathandavidolson@gmail.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
-Depends: R (>= 3.2.2)
+Depends: 
+    R (>= 3.2.2)
 License: Artistic-2.0
 LazyData: true
-Imports: dplyr,
+Imports: 
+    dplyr,
     tidyr,
     magrittr,
     devtools,
@@ -14,3 +16,9 @@ Imports: dplyr,
     knitr,
     stringr,
     rmarkdown
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
