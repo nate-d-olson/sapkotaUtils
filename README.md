@@ -3,4 +3,9 @@
 
 A package with basic utilities for use in metagenomic sequence analysis developed for the Sapkota lab.
 
+Install Package using
+
+    # install.packages("devtools")
+    devtools::install_github("nate-d-olson/sapkotaUtils")
+
 Rmarkdown Template files \* `lab_notebook` - template lab notebook file
