@@ -18,6 +18,8 @@ md5table
 For use in data analysis provenance, generates a data frame with file names and md5 values for use in checking for changes to source data files.  Is not able to validate changes to source data files.
 }
 \examples{
-md5table(file_list)
+\dontrun{
+md5table("file_list")
+}
 }
 
