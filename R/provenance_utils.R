@@ -5,7 +5,10 @@
 #' @return data_frame with file name and md5 value
 #' @export
 #'
-#' @examples md5table(file_list)
+#' @examples
+#' \dontrun{
+#' md5table(file_list)
+#' }
 md5table <- function(file_list){
     dat_info <- dplyr::data_frame()
     for(dat_file in file_list){
