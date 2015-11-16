@@ -7,7 +7,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' md5table(file_list)
+#' md5table("file_list")
 #' }
 md5table <- function(file_list){
     dat_info <- dplyr::data_frame()
