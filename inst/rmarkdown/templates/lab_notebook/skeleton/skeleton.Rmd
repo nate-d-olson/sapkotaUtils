@@ -39,10 +39,10 @@ Names of source data files and md5 sums for provenance checking
      Make sure to use full file path names for md5 sums
 -->
 ```{r}
-source_dat_files <- c(
+dat_files <- c(
    file_id = "file_path"
 )
-md5table(source_dat_files) %>% kable()
+md5table(dat_files) %>% kable()
 ```
 
 
